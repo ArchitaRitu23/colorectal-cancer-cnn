@@ -54,7 +54,7 @@ The dataset is used to explore deep learning techniques for identifying patterns
 
 ## Key Outcomes
 
-The project explores automated colorectal cancer image classification using deep learning. According to the project results documented in my resume, the model achieved **95% classification accuracy** on the EBHI-Seg dataset, outperforming the baseline by 12%.
+The project explores automated colorectal cancer image classification using deep learning.The model achieved **95% classification accuracy** on the EBHI-Seg dataset.
 
 ## Applications
 
