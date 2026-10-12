@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Cancer</title>
+
+  <!-- slider stylesheet -->
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Cancer
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about"> ABOUT </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register">REGISTRATION</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login"> LOGIN </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="userhome">USERHOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="upload">UPLOAD</a>
+                </li>
+              </ul>
+              <div class="user_option">
+                <a href="">
+                  <img src="/static/images/user.png" alt="">
+                </a>
+                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- who section -->
+
+  <section class="who_section layout_padding">
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="img-box">
+            <img src="/static/images/who-img.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="detail-box">
+            <div class="heading_container"> -->
+    <form class="row g-3" action="/register" method="post">
+      {% csrf_token %}
+      <!-- <center>
+                    <p style="color: white(0, 0, 0);">{{msg}}</p>
+                </center> -->
+
+      <div class="col-md-6">
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form3Example1cg" style="color: white;">Your
+            Name</label>
+          <input type="text" name="name" id="form3Example1cg" class="form-control" placeholder="Your Name" />
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form3Example3cg" style="color: white;">Your
+            Email</label>
+          <input type="email" name="email" id="form3Example3cg" class="form-control" placeholder="Your Email" />
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form3Example4cg" style="color: white;">Password</label>
+          <input type="password" name="password" id="form3Example4cg" class="form-control" placeholder="Password" />
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form3Example4cdg" style="color: white;">Repeat your password</label>
+          <input type="password" name="conpassword" id="form3Example4cdg" class="form-control"
+            placeholder="Repeat your Password" />
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form3Example4cdg" style="color: white;">Age</label>
+          <input type="number" name="Age" id="form3Example4cdg" class="form-control" placeholder="Age" />
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form3Example4cdg" style="color: white;">contact</label>
+          <input type="number" name="contact" pattern="[0-9]{10}" id="form3Example4cdg" class="form-control"
+            placeholder="contact" required />
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <center> <button type="submit" class="btn btn-success">Register</button></center>
+      </div>
+      <h1>{{msg}}</h1>
+    </form>
+
+
+    <!-- end info_section -->
+
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+      <p>
+        &copy; 2023 All Rights Reserved By YOUNG MINDS PRIVATE LIMITED
+        <!-- <a href="https://html.design/">Free Html Templates</a> -->
+      </p>
+    </section>
+    <!-- footer section -->
+
+    <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <!-- owl carousel script 
+    -->
+    <script type="text/javascript">
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 0,
+        navText: [],
+        center: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    </script>
+    <!-- end owl carousel script -->
+
+</body>
+
+</html>
